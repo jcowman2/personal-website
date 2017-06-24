@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Catamaran:100,300,500");
+body {
+  background-color: #1A1323;
+  font-family: "Catamaran", sans-serif;
+  color: #E8E9F3;
+  font-weight: 100; }
+
+main {
+  width: 90%;
+  margin: auto;
+  text-align: center; }
+
+h1 {
+  font-weight: 100;
+  font-size: 64px; }
+
+p {
+  font-size: 24px; }
+
+.emphCard {
+  padding: 3px; }
+  .emphCard h1 {
+    padding-bottom: 0px;
+    margin-bottom: 0px; }
+  .emphCard p {
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px; }
+
+#splash {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 900px;
+  height: 250px; }
+
+/*# sourceMappingURL=stylesheet.css.map */
