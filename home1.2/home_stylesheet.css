@@ -35,6 +35,7 @@ p {
   margin-left: 53%; }
 
 #resume {
+  display: none;
   margin-top: 10%;
   height: 80%; }
 
