@@ -7,6 +7,8 @@
  * http://opensource.org/licenses/MIT
  */
 
+ var githubUserNotFound; //Added by Joe Cowman
+
 var GitHubActivity = (function() {
   'use strict';
 
@@ -251,8 +253,10 @@ var GitHubActivity = (function() {
 
     methods.getOutputFromRequest(userUrl, function(error, output) {
       if (error) {
+        githubUserNotFound = true;
         header = Mustache.render(templates.UserNotFound, { username: options.username });
       } else {
+        githubUserNotFound = false;
         header = methods.getHeaderHTML(output)
       }
       methods.renderIfReady(selector, header, activity)
