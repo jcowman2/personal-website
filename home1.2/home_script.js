@@ -1,4 +1,4 @@
-GitHubActivity.feed({username: "jcowman", selector: "#feed"});
+GitHubActivity.feed({username: "jcowman2", selector: "#feed"});
 
 $(document).ready(function() {
 
