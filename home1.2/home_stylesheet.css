@@ -27,6 +27,15 @@ p {
   margin-bottom: 0px; }
 
 #welcome {
-  margin-top: 18%; }
+  float: left;
+  margin-top: 18%;
+  max-width: 50%; }
+
+#sideContent {
+  margin-left: 53%; }
+
+#resume {
+  margin-top: 10%;
+  height: 80%; }
 
 /*# sourceMappingURL=home_stylesheet.css.map */
