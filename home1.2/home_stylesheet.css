@@ -6,7 +6,24 @@ body {
   color: #E8E9F3;
   font-weight: 100; }
 
+main {
+  width: 90%;
+  margin: auto; }
+
 h1 {
+  font-size: 64px;
   font-weight: 300; }
+
+p {
+  font-size: 24px; }
+  p a {
+    color: #E8E9F3;
+    font-weight: bold;
+    text-decoration: none; }
+  p a:hover {
+    color: #F49D37; }
+
+.wowDiv h1 {
+  margin-bottom: 0px; }
 
 /*# sourceMappingURL=home_stylesheet.css.map */
