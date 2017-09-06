@@ -6,4 +6,8 @@ body {
   color: #E8E9F3;
   font-weight: 100; }
 
+main {
+  width: 90%;
+  margin: auto; }
+
 /*# sourceMappingURL=all.css.map */

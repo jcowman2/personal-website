@@ -1,0 +1,27 @@
+@import ../all
+
+=grow-shadow()
+  &:hover
+    transition: all 0.5s ease
+    background-color: $sky-blue
+    width: 90%
+
+
+.portfolio-item
+  h2
+    font-family: $catamaran-font
+    font-size: 3.5em
+    font-weight: 500
+    color: $dark-purple
+
+    padding-top: 0.6%
+    padding-bottom: 0.6%
+    padding-left: 3%
+
+  background-color: $ivory
+  width: 86%
+  margin: auto
+  margin-top: -2.5%
+
+  transition: all 0.5s ease
+  +grow-shadow

@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300");
+@import url("https://fonts.googleapis.com/css?family=Catamaran:100,300,500");
+body {
+  background-color: #1A1323;
+  font-family: "Roboto", sans-serif;
+  color: #E8E9F3;
+  font-weight: 100; }
+
+main {
+  width: 90%;
+  margin: auto; }
+
+.portfolio-item {
+  background-color: #E8E9F3;
+  width: 86%;
+  margin: auto;
+  margin-top: -2.5%;
+  transition: all 0.5s ease; }
+  .portfolio-item h2 {
+    font-family: "Catamaran", sans-serif;
+    font-size: 3.5em;
+    font-weight: 500;
+    color: #1A1323;
+    padding-top: 0.6%;
+    padding-bottom: 0.6%;
+    padding-left: 3%; }
+  .portfolio-item:hover {
+    transition: all 0.5s ease;
+    background-color: #3F88C5;
+    width: 90%; }
+
+/*# sourceMappingURL=portfolio-stylesheet.css.map */
