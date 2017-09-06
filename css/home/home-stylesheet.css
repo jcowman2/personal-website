@@ -35,6 +35,7 @@ p {
   margin-left: 53%; }
 
 #feed {
+  display: none;
   position: relative;
   color: black;
   height: 80%;
