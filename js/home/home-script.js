@@ -1,7 +1,6 @@
 GitHubActivity.feed({username: "jcowman2", selector: "#feed"});
 
 $(document).ready(function() {
-  console.log("barK");
 
   $("#resume").hide();
   $("#feed").hide();
@@ -9,7 +8,7 @@ $(document).ready(function() {
   $("#resumeBtn").click(function() {
     $("#feed").hide();
     $("#resume").fadeIn();
-  })
+  });
 
   setTimeout(function() {
     console.log(githubUserNotFound);

@@ -6,22 +6,40 @@
     background-color: $sky-blue
     width: 90%
 
-
 .portfolio-item
-  h2
-    font-family: $catamaran-font
-    font-size: 3.5em
-    font-weight: 500
-    color: $dark-purple
+  font-family: $catamaran-font
+  color: $dark-purple
 
-    padding-top: 0.6%
-    padding-bottom: 0.6%
-    padding-left: 3%
-
+  display: block
   background-color: $ivory
   width: 86%
+
+  padding-left: 30px
+  padding-bottom: 4px
+
   margin: auto
-  margin-top: -2.5%
+  margin-top: 0px
+  margin-bottom: -35px
 
   transition: all 0.5s ease
   +grow-shadow
+
+  h2
+    font-size: 3.5em
+    font-weight: 500
+    margin-bottom: -4px
+
+  p
+    line-height: 1.2
+    font-size: 1.2em
+    font-weight: 300
+
+    margin-top: 0.2em
+    margin-bottom: 0.3em
+
+  .inner-content
+    display: none
+
+  .description
+    max-width: 50%
+    margin-top: -20px
