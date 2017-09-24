@@ -10,6 +10,16 @@ main {
   width: 90%;
   margin: auto; }
 
+.button {
+  background-color: #E8E9F3;
+  border: none;
+  color: #1A1323;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em; }
+
 .portfolio-item {
   font-family: "Catamaran", sans-serif;
   color: #1A1323;
@@ -41,5 +51,12 @@ main {
   .portfolio-item .description {
     max-width: 50%;
     margin-top: -20px; }
+
+.button {
+  position: relative; }
+  .button:hover, .button:focus, .button:active {
+    background-color: #3F88C5;
+    transition: all 0.5s ease;
+    box-shadow: 10px 10px -10px rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=portfolio-stylesheet.css.map */

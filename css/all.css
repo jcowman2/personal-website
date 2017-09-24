@@ -10,4 +10,14 @@ main {
   width: 90%;
   margin: auto; }
 
+.button {
+  background-color: #E8E9F3;
+  border: none;
+  color: #1A1323;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em; }
+
 /*# sourceMappingURL=all.css.map */

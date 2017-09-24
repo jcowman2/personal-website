@@ -1,10 +1,18 @@
 @import ../all
 
-=grow-shadow()
+=tile-grow()
   &:hover
     transition: all 0.5s ease
     background-color: $light-blue
     width: 90%
+
+=button-shadow()
+  &:hover,
+  &:focus,
+  &:active
+    background-color: $sky-blue
+    transition: all 0.5s ease
+    box-shadow: 10px 10px -10px rgba(0, 0, 0, 0.5)
 
 .portfolio-item
   font-family: $catamaran-font
@@ -22,7 +30,7 @@
   margin-bottom: -35px
 
   transition: all 0.5s ease
-  +grow-shadow
+  +tile-grow
 
   h2
     font-size: 3.5em
@@ -43,3 +51,7 @@
   .description
     max-width: 50%
     margin-top: -20px
+
+.button
+  position: relative
+  +button-shadow
