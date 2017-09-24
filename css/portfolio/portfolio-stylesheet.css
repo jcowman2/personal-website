@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300");
+@import url("https://fonts.googleapis.com/css?family=Catamaran:100,300,500");
+body {
+  background-color: #1A1323;
+  font-family: "Roboto", sans-serif;
+  color: #E8E9F3;
+  font-weight: 100; }
+
+main {
+  width: 90%;
+  margin: auto; }
+
+.button {
+  background-color: #E8E9F3;
+  border: none;
+  color: #1A1323;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em; }
+
+.portfolio-item {
+  font-family: "Catamaran", sans-serif;
+  color: #1A1323;
+  display: block;
+  background-color: #E8E9F3;
+  width: 86%;
+  padding-left: 30px;
+  padding-bottom: 4px;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: -35px;
+  transition: all 0.5s ease; }
+  .portfolio-item:hover {
+    transition: all 0.5s ease;
+    background-color: #97b2d1;
+    width: 90%; }
+  .portfolio-item h2 {
+    font-size: 3.5em;
+    font-weight: 500;
+    margin-bottom: -4px; }
+  .portfolio-item p {
+    line-height: 1.2;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 0.2em;
+    margin-bottom: 0.3em; }
+  .portfolio-item .inner-content {
+    display: none; }
+  .portfolio-item .description {
+    max-width: 60%;
+    margin-top: -20px; }
+
+.button {
+  position: relative; }
+  .button:hover, .button:focus, .button:active {
+    background-color: #3F88C5;
+    transition: all 0.5s ease;
+    box-shadow: 10px 10px -10px rgba(0, 0, 0, 0.5); }
+
+/*# sourceMappingURL=portfolio-stylesheet.css.map */

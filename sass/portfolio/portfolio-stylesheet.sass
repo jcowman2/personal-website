@@ -1,0 +1,57 @@
+@import ../all
+
+=tile-grow()
+  &:hover
+    transition: all 0.5s ease
+    background-color: $light-blue
+    width: 90%
+
+=button-shadow()
+  &:hover,
+  &:focus,
+  &:active
+    background-color: $sky-blue
+    transition: all 0.5s ease
+    box-shadow: 10px 10px -10px rgba(0, 0, 0, 0.5)
+
+.portfolio-item
+  font-family: $catamaran-font
+  color: $dark-purple
+
+  display: block
+  background-color: $ivory
+  width: 86%
+
+  padding-left: 30px
+  padding-bottom: 4px
+
+  margin: auto
+  margin-top: 0px
+  margin-bottom: -35px
+
+  transition: all 0.5s ease
+  +tile-grow
+
+  h2
+    font-size: 3.5em
+    font-weight: 500
+    margin-bottom: -4px
+
+  p
+    line-height: 1.2
+    font-size: 1.2em
+    font-weight: 300
+
+    margin-top: 0.2em
+    margin-bottom: 0.3em
+
+  .inner-content
+    display: none
+
+  .description
+    max-width: 60%
+    margin-top: -20px
+
+.button
+  position: relative
+  +button-shadow

@@ -10,6 +10,16 @@ main {
   width: 90%;
   margin: auto; }
 
+.button {
+  background-color: #E8E9F3;
+  border: none;
+  color: #1A1323;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em; }
+
 h1 {
   font-size: 64px;
   font-weight: 300; }
@@ -35,9 +45,10 @@ p {
   margin-left: 53%; }
 
 #feed {
+  display: none;
   position: relative;
   color: black;
-  height: 80%;
+  height: 600px;
   width: 80%;
   margin: auto;
   top: 80px; }
@@ -47,4 +58,4 @@ p {
   margin-top: 10%;
   height: 80%; }
 
-/*# sourceMappingURL=home_stylesheet.css.map */
+/*# sourceMappingURL=home-stylesheet.css.map */
