@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Coming Soon</title>
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-  <link rel="stylesheet" href="./css/home/github-activity.css">
-  <link rel="stylesheet" href="./css/home/home-stylesheet.css">
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-  <script src="./js/home/github-activity.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="./js/home/home-script.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Joe Cowman</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,400" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <script src="main.js"></script>
 </head>
 <body>
-  <main>
-    <div>
-      <div id="welcome" class="wowDiv">
-        <h1>Hi, I'm Joe Cowman.</h1>
-        <div class="innerContent">
-          <p>I'm an aspiring full-stack software engineer and game developer.</p>
-          <p>This site is under heavy development, so check back for updates! <br>
-            In the meantime, here's my
-            <a id="portfolioBtn" href="portfolio.html">portfolio</a>
-            and <a id="resumeBtn" href="#">resume</a>.</p>
+    <main>
+        <div class="section" id="title-section">
+            <h1>Joe Cowman</h1>
+            <h2>Software Engineer</h2>
         </div>
-      </div>
-      <div id="sideContent">
-        <div>
-          <div id="feed"></div>
+        <div class="section">
+            <nav>
+                <a class="nav-element" href="#">About</a>
+                <a class="nav-element" href="#">Experience</a>
+                <a class="nav-element" href="#">Projects</a>
+                <a class="nav-element" href="#">Blog</a>
+                <div class="nav-element">
+                    <a href="https://github.com/jcowman2">
+                        <img id="github-logo" src="assets/GitHub-Mark.svg" alt="Github Logo">
+                    </a>
+                </div>
+            </nav>
         </div>
-        <iframe id="resume" src="https://drive.google.com/file/d/0B9ERkb4lBSSIaE1LTDVFbW9XU0E/preview" width="640" height="480"></iframe>
-      </div>
-    </div>
-  </main>
+        
+    </main>
+    <!-- <div class="section">Two</div>
+    <div class="section">Three</div>
+    <div class="section">Four</div> -->
 </body>
 </html>
