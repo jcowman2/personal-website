@@ -66,12 +66,15 @@ nav {
 
 .nav-element {
     font-size: 2em;
-    padding-left: 1.1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
 #github-logo,
 #linkedin-logo,
 #email-icon {
-    width: 1.8em;
+    padding-left: 0em;
+    padding-right: 0em;
+    width: 1.75em;
     height: 1.5em;
 }
