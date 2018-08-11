@@ -48,11 +48,11 @@ a:visited {
     text-decoration: none;
 }
 
-a:hover {
+a.nav-element:hover {
     text-decoration: underline;
 }
 
-a:active {
+a.nav-element:active {
     text-decoration: underline;
 }
 
@@ -66,10 +66,12 @@ nav {
 
 .nav-element {
     font-size: 2em;
-    padding-left: 1em;
+    padding-left: 1.1em;
 }
 
-#github-logo {
-    width: 1.5em;
+#github-logo,
+#linkedin-logo,
+#email-icon {
+    width: 1.8em;
     height: 1.5em;
 }
