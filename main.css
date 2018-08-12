@@ -1,5 +1,8 @@
 html, body {
     height: 100%;
+    /* background-color: #FDFFF7; */
+    background-color: #F7F8FC;
+    margin: 0;
 }
 
 main {
@@ -10,20 +13,26 @@ main {
 }
 
 .section {
-    width: 90%;
+    width: 100%;
 }
 
-#title-section {
+.section .content {
+    max-width: 90%;
+}
+
+#title-section .content {
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 5%;
 }
 
-#title-section h1 {
+#title-section .content h1 {
     font-size: 8.5em;
     line-height: 0.9em;
     margin-bottom: 0px;
 }
 
-#title-section h2 {
+#title-section .content h2 {
     font-size: 3em;
     font-weight: 300;
     line-height: 0.9em;
@@ -57,17 +66,35 @@ a.nav-element:active {
 }
 
 nav {
+    /* background-color: #7D98A1; */
+    background-color: #8197EF;
+    height: 100%;
+    width: 100%;
+}
+
+nav .content {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    margin: auto;
-    min-width: 50%;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
 }
 
 .nav-element {
     font-size: 2em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding: 0em 0.5em 0em 0.5em;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-element * {
+    margin: 0;
+    padding: 0;
 }
 
 #github-logo,
