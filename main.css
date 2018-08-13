@@ -5,6 +5,7 @@ html, body {
     background-color: #F7F8FC;
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 main {
@@ -133,14 +134,67 @@ nav .content {
     padding: 0;
 }
 
+/* Quote Section Styles */
+
+#quote-section {
+    margin-top: 5%;
+    font-family: 'Hind', sans-serif;
+}
+
+#quote-section .content {
+    width: 40%;
+    font-size: 1.25em;
+    color: #4E4F55;
+    border-left: 1px solid #4E4F55;
+    border-right: 1px solid #4E4F55;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
 /* About Section Styles */
 
 #about-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr 2fr;
+    gap: 5%;
 }
 
 #about-grid-container div {
-    background-color: red;
-    margin: 3px;
+    /* background-color: red; */
+}
+
+#about-bio {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#about-pic {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#about-headline {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#about-extra {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#about-interests {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
