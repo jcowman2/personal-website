@@ -98,11 +98,11 @@ a:visited {
 /* Navigation Bar Styles */
 
 a.nav-element:hover {
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 a.nav-element:active {
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 nav {
