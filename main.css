@@ -151,6 +151,10 @@ nav .content {
     padding-right: 3%;
 }
 
+#quote-author {
+    text-align: right;
+}
+
 /* About Section Styles */
 
 #about-grid-container {
