@@ -167,7 +167,7 @@ nav .content {
 #about-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1.5fr 1fr 2fr;
+    grid-template-rows: 1fr 0.3fr 1fr;
     gap: 5%;
 }
 
@@ -183,6 +183,11 @@ nav .content {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
+}
+
+#about-pic img {
+    height: 100%;
+    width: 100%;
 }
 
 #about-headline {
