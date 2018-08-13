@@ -166,8 +166,8 @@ nav .content {
 
 #about-grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.3fr 1fr;
+    grid-template-columns: 1fr 1.2fr 0.8fr;
+    grid-template-rows: 0.8fr 0.3fr 1fr;
     gap: 5%;
 }
 
@@ -186,8 +186,9 @@ nav .content {
 }
 
 #about-pic img {
-    height: 100%;
-    width: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
 }
 
 #about-headline {
@@ -195,6 +196,30 @@ nav .content {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#about-headline div {
+    margin: 0;
+    padding: 10px;
+    height: 40%;
+    width: auto;
+    text-align: center;
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-headline h2 {
+    font-size: 2em;
+}
+
+#about-headline p {
+    font-size: 1.3em;
 }
 
 #about-extra {
