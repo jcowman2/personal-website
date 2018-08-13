@@ -134,3 +134,13 @@ nav .content {
 }
 
 /* About Section Styles */
+
+#about-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#about-grid-container div {
+    background-color: red;
+    margin: 3px;
+}
