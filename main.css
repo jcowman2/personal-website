@@ -43,6 +43,16 @@ a:visited {
     margin: auto;
 }
 
+.section-header {
+    color: #4E4F55;
+    font-size: 3em;
+    text-align: center;
+    border-bottom: solid 2px #4E4F55;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Title Section Styles */
 
 #title-section .content {
@@ -122,3 +132,5 @@ nav .content {
     margin: 0;
     padding: 0;
 }
+
+/* About Section Styles */
