@@ -244,3 +244,24 @@ nav .content {
     grid-row-start: 2;
     grid-row-end: 4;
 }
+
+/* Project Section Styles */
+
+#projects-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row; */
+}
+
+.project-card {
+    width: 20%;
+    min-width: 300px;
+    /* margin: 0;
+    width: 20%;
+    max-width: 20%; */
+}
