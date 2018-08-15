@@ -43,6 +43,7 @@ a:active {
 
 .section .content {
     max-width: 90%;
+    min-width: 200px;
     margin: auto;
 }
 
@@ -252,10 +253,13 @@ nav .content {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .experience-logo-container {
     width: 20%;
+    min-width: 200px;
+    margin: 5px;
 }
 
 .experience-logo-container img {
@@ -265,6 +269,8 @@ nav .content {
 
 .experience-description {
     width: 60%;
+    flex-shrink: 0;
+    margin: 5px;
 }
 
 /* Project Section Styles */
