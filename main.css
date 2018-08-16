@@ -84,7 +84,7 @@ a:active {
 }
 
 #subtitle-bar {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -259,14 +259,14 @@ nav .content {
     padding: 0;
 }
 
-#about-interests {
+#about-skills {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
 }
 
-#about-interests-headline {
+#about-skills-headline {
     font-size: 2em;
     text-align: center;
     margin: auto;
