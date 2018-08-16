@@ -297,6 +297,7 @@ nav .content {
     background-color: rgb(196, 198, 223);
     border-radius: 3px;
 }
+
 /* Experience Section Styles */
 
 .experience-card {
@@ -337,8 +338,11 @@ nav .content {
     min-width: 200px;
 }
 
+/* Mobile Overrides */
 
 @media only screen and (max-width: 600px) {
+    /* Title Section Overrides */
+
     #title-section-name {
         font-size: 3em;
         text-align: center;
@@ -361,6 +365,22 @@ nav .content {
         padding: 0 3px 0 3px;
     }
 
+    /* Nav Section Overrides */
+
+    nav .content {
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    /* Quote Section Overrides */
+
+    #quote-section .content {
+        width: 80%;
+    }
+
+    /* About Section Overrides */
+
     #about-bottomrow-container {
         flex-direction: column;
         width: 100%;
@@ -378,5 +398,11 @@ nav .content {
 
     .about-fa-card {
         min-width: 80%;
+    }
+
+    /* Experience Section Overrides */
+
+    .experience-description {
+        width: 80%;
     }
 } 
