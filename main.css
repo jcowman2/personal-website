@@ -121,6 +121,30 @@ a:active {
     padding: 0 3px 0 3px;
 }
 
+@media only screen and (max-width: 600px) {
+    #title-section-name {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    #title-section-subtitle {
+        font-size: 1.5em;
+        text-align: center;
+        margin: auto;
+    }
+
+    #icon-row {
+        padding-top: 5px;
+        margin: auto;
+    }
+
+    #icon-row img {
+        width: 10vw;
+        height: 10vw;
+        padding: 0 3px 0 3px;
+    }
+} 
+
 /* Navigation Bar Styles */
 
 nav {
@@ -151,7 +175,6 @@ nav .content {
 .nav-element * {
     margin: 0;
     padding: 0;
-    /* color: #F7F8FC; */
 }
 
 /* Quote Section Styles */
