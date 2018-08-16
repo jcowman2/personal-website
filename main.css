@@ -181,6 +181,8 @@ nav .content {
     display: grid;
     grid-template-columns: 1fr 1.2fr 0.8fr;
     grid-template-rows: 0.75fr 1fr;
+    /* grid-template-rows: 0.75fr 0.25fr 1fr; */
+    grid-template-rows: 0.25fr 0.25fr 1fr;
     gap: 5%;
 }
 
@@ -189,6 +191,7 @@ nav .content {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    /* grid-row-end: 3; */
 }
 
 #about-pic {
@@ -208,7 +211,9 @@ nav .content {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
+    /* grid-row-start: 3; */
     grid-row-end: 3;
+    /* grid-row-end: 4; */
 }
 
 #about-fa-container {
@@ -262,7 +267,9 @@ nav .content {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
+    /* grid-row-start: 1; */
     grid-row-end: 3;
+    /* grid-row-end: 4; */
 }
 
 #about-skills-headline {
