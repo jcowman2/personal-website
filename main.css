@@ -177,17 +177,17 @@ nav .content {
 
 /* About Section Styles */
 
-/* #about-grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 0.8fr;
-    grid-template-rows: 0.75fr 1fr;
-    gap: 5%;
-} */
+#about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 #about-toprow-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap-reverse;
 }
 
 #about-bottomrow-container {
@@ -195,24 +195,27 @@ nav .content {
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 2%;
+    flex-wrap: wrap;
 }
 
 #about-bio {
     width: 70%;
+    min-width: 200px;
 }
 
 #about-pic {
-    width: 25%;
+    width: 28%;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #about-pic img {
-    max-width: 100%;
-    width: auto;
-    height: auto;
+    max-width: 80%;
 }
 
 #about-fa {
-    /* height: 100%; */
     width: 70%;
 }
 
@@ -220,6 +223,7 @@ nav .content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    min-width: 200px;
 }
 
 #about-fa-headline {
@@ -237,6 +241,7 @@ nav .content {
     height: 40%;
     width: auto;
     text-align: center;
+    min-width: 100px;
     max-width: 20%;
     display: flex;
     flex-direction: column;
@@ -264,13 +269,8 @@ nav .content {
 }
 
 #about-skills {
-    /* grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3; */
-    /* height: 100%; */
-    /* padding-top: 2.5%; */
-    width: 25%;
+    width: 28%;
+    min-width: 200px;
 }
 
 #about-skills-headline {
