@@ -121,30 +121,6 @@ a:active {
     padding: 0 3px 0 3px;
 }
 
-@media only screen and (max-width: 600px) {
-    #title-section-name {
-        font-size: 3em;
-        text-align: center;
-    }
-
-    #title-section-subtitle {
-        font-size: 1.5em;
-        text-align: center;
-        margin: auto;
-    }
-
-    #icon-row {
-        padding-top: 5px;
-        margin: auto;
-    }
-
-    #icon-row img {
-        width: 10vw;
-        height: 10vw;
-        padding: 0 3px 0 3px;
-    }
-} 
-
 /* Navigation Bar Styles */
 
 nav {
@@ -321,7 +297,6 @@ nav .content {
     background-color: rgb(196, 198, 223);
     border-radius: 3px;
 }
-
 /* Experience Section Styles */
 
 .experience-card {
@@ -361,3 +336,47 @@ nav .content {
     width: 20%;
     min-width: 200px;
 }
+
+
+@media only screen and (max-width: 600px) {
+    #title-section-name {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    #title-section-subtitle {
+        font-size: 1.5em;
+        text-align: center;
+        margin: auto;
+    }
+
+    #icon-row {
+        padding-top: 5px;
+        margin: auto;
+    }
+
+    #icon-row img {
+        width: 10vw;
+        height: 10vw;
+        padding: 0 3px 0 3px;
+    }
+
+    #about-bottomrow-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        align-items: center;
+    }
+
+    #about-fa {
+        width: 100%;
+    }
+
+    #about-fa-headline {
+        max-width: 100%;
+    }
+
+    .about-fa-card {
+        min-width: 80%;
+    }
+} 
