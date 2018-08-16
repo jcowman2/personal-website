@@ -124,7 +124,7 @@ a:active {
 /* Navigation Bar Styles */
 
 nav {
-    background-color: #8197EF;
+    background-color: rgba(35, 50, 102, 0.945);
     height: 100%;
     width: 100%;
     font-family: 'Hind', sans-serif;
@@ -150,6 +150,7 @@ nav .content {
 .nav-element * {
     margin: 0;
     padding: 0;
+    color: #F7F8FC;
 }
 
 /* Quote Section Styles */
@@ -179,7 +180,7 @@ nav .content {
 #about-grid-container {
     display: grid;
     grid-template-columns: 1fr 1.2fr 0.8fr;
-    grid-template-rows: 0.8fr 0.3fr 1fr;
+    grid-template-rows: 0.75fr 1fr;
     gap: 5%;
 }
 
@@ -203,17 +204,29 @@ nav .content {
     height: auto;
 }
 
-#about-headline {
+#about-fa {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
-#about-headline div {
+#about-fa-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#about-fa-headline {
+    font-size: 2em;
+    text-align: center;
+    margin: auto;
+    color: #4E4F55;
+    padding-bottom: 30px;
+    max-width: 30%;
+}
+
+.about-fa-card {
     margin: 0;
     padding: 10px;
     height: 40%;
@@ -222,30 +235,43 @@ nav .content {
     max-width: 20%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: space-around; */
     align-items: center;
 }
 
-#about-headline h2 {
-    font-size: 2em;
+.about-fa-icon {
+    width: 75px;
+    height: 75px;
+    padding: 0;
+    margin: 0;
 }
 
-#about-headline p {
+.about-fa-card h4 {
     font-size: 1.3em;
+    font-weight: normal;
+    border-bottom: solid 2px rgba(78, 79, 85, 0.219);
+    padding-bottom: 15px;
 }
 
-#about-extra {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
+.about-fa-card p {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
 }
 
 #about-interests {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
-    grid-row-end: 4;
+    grid-row-end: 3;
+}
+
+#about-interests-headline {
+    font-size: 2em;
+    text-align: center;
+    margin: auto;
+    color: #4E4F55;
+    padding-bottom: 30px;
 }
 
 /* Experience Section Styles */
