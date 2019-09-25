@@ -6998,8 +6998,22 @@ body {
   font-size: 145px;
   margin-bottom: -10px; }
 
-.main-subtitle {
+.main-subtitle, .main-subtitle-second {
   font-size: 45px;
   font-family: "Roboto Mono", monospace;
   letter-spacing: -0.75px;
   color: rgba(31, 32, 36, 0.8); }
+  .main-subtitle-second {
+    margin-bottom: 120px; }
+
+.enter-site {
+  font-size: 25px; }
+  .enter-site a {
+    color: rgba(31, 32, 36, 0.5); }
+  .enter-site a:hover {
+    color: rgba(31, 32, 36, 0.8); }
+
+.enter-site-arrow-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 7px; }

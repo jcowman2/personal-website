@@ -37,8 +37,10 @@ $off-white: #fafafa;
 $dark-slate: #1f2024;
 
 $page-bg: $off-white;
+
 $text-primary: $dark-slate;
 $text-primary-80: adjust-color($text-primary, $alpha: -0.2);
+$text-primary-50: adjust-color($text-primary, $alpha: -0.5);
 
 // Fonts
 $page-serif: "Faustina", serif;
@@ -75,4 +77,25 @@ body {
   font-family: $page-mono;
   letter-spacing: -0.75px;
   color: $text-primary-80;
+
+  &-second {
+    @extend .main-subtitle;
+    margin-bottom: 120px;
+  }
+}
+
+.enter-site {
+  font-size: 25px;
+  a {
+    color: $text-primary-50;
+  }
+  a:hover {
+    color: $text-primary-80;
+  }
+}
+
+.enter-site-arrow-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 7px;
 }
