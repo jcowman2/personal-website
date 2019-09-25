@@ -27,14 +27,52 @@ $primary-invert: $pink-invert;
 */
 
 @import "../node_modules/bulma/bulma";
+@import url("https://fonts.googleapis.com/css?family=Faustina&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
 
 /* Start joecowman.com styles */
 
 // Colors
 $off-white: #fafafa;
+$dark-slate: #1f2024;
 
 $page-bg: $off-white;
+$text-primary: $dark-slate;
+$text-primary-80: adjust-color($text-primary, $alpha: -0.2);
+
+// Fonts
+$page-serif: "Faustina", serif;
+$page-mono: "Roboto Mono", monospace;
 
 html {
   background-color: $page-bg;
+}
+
+body {
+  font-family: $page-serif;
+  color: $text-primary;
+}
+
+.navbar {
+  &.is-transparent {
+    background-color: transparent;
+    background-image: none;
+  }
+}
+
+.navbar-item {
+  font-size: 19px;
+  color: $text-primary-80;
+}
+
+#main-title {
+  font-size: 145px;
+  margin-bottom: -10px;
+}
+
+.main-subtitle {
+  font-size: 45px;
+  font-family: $page-mono;
+  letter-spacing: -0.75px;
+  color: $text-primary-80;
 }
