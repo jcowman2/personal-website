@@ -28,7 +28,7 @@ $primary-invert: $pink-invert;
 
 @import "../node_modules/bulma/bulma";
 @import url("https://fonts.googleapis.com/css?family=Faustina&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap");
 
 /* Start joecowman.com styles */
 
@@ -54,6 +54,7 @@ html {
 body {
   font-family: $page-serif;
   color: $text-primary;
+  font-size: 16px;
 }
 
 .navbar {
@@ -100,4 +101,23 @@ body {
 .section-title {
   color: $text-primary-90;
   font-size: 40px;
+}
+
+.experience {
+  margin-top: 100px; // TODO - fix hack
+  margin-left: 2px;
+}
+
+.experience-title {
+  font-family: $page-mono;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.experience-subtitle {
+  font-family: $page-mono;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }

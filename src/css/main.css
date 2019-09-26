@@ -20,7 +20,7 @@ $primary-invert: $pink-invert;
 */
 /*! bulma.io v0.7.5 | MIT License | github.com/jgthms/bulma */
 @import url("https://fonts.googleapis.com/css?family=Faustina&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap");
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -6984,7 +6984,8 @@ html {
 
 body {
   font-family: "Faustina", serif;
-  color: #1f2024; }
+  color: #1f2024;
+  font-size: 16px; }
 
 .navbar.is-transparent {
   background-color: transparent;
@@ -7020,3 +7021,19 @@ body {
 .section-title {
   color: rgba(31, 32, 36, 0.9);
   font-size: 40px; }
+
+.experience {
+  margin-top: 100px;
+  margin-left: 2px; }
+
+.experience-title {
+  font-family: "Roboto Mono", monospace;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px; }
+
+.experience-subtitle {
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px; }
