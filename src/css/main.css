@@ -7020,10 +7020,12 @@ body {
 
 .section-title {
   color: rgba(31, 32, 36, 0.9);
-  font-size: 40px; }
+  font-size: 60px;
+  margin-bottom: 80px;
+  margin-left: -4px; }
 
 .experience {
-  margin-top: 100px;
+  margin-bottom: 100px;
   margin-left: 2px; }
 
 .experience-title {
@@ -7037,3 +7039,6 @@ body {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 20px; }
+
+.experience-bullets li {
+  margin-bottom: 16px; }
