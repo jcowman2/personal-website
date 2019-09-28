@@ -6987,6 +6987,31 @@ body {
   color: #1f2024;
   font-size: 16px; }
 
+@keyframes highlight-in {
+  from {
+    width: 0px; }
+  to {
+    width: 100%; } }
+
+.fade-in-1 {
+  animation: fade-in 1s, slide-up 0.75s;
+  animation-fill-mode: both; }
+
+.fade-in-2 {
+  animation: fade-in 1s, slide-up 0.75s;
+  animation-delay: 0.25s;
+  animation-fill-mode: both; }
+
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100px); } }
+
 .navbar.is-transparent {
   background-color: transparent;
   background-image: none; }
@@ -7010,16 +7035,26 @@ body {
   display: inline; }
 
 .highlight {
-  width: inherit;
+  width: 100%;
   height: 38px;
   position: relative;
   left: 14px;
   top: -34px;
   z-index: -1; }
   .highlight-primary {
-    background: rgba(0, 145, 255, 0.1); }
+    background: rgba(0, 145, 255, 0.1);
+    animation-name: highlight-in;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.75s; }
   .highlight-secondary {
-    background: rgba(247, 181, 0, 0.1); }
+    background: rgba(247, 181, 0, 0.1);
+    animation-name: highlight-in;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s; }
 
 .subtitle-container {
   margin-bottom: -20px; }

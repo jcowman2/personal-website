@@ -51,6 +51,8 @@ $text-primary-50: adjust-color($text-primary, $alpha: -0.5);
 $page-serif: "Faustina", serif;
 $page-mono: "Roboto Mono", monospace;
 
+// General Styles
+
 html {
   background-color: $page-bg;
 }
@@ -60,6 +62,53 @@ body {
   color: $text-primary;
   font-size: 16px;
 }
+
+// Animations
+
+@mixin animate($name, $delay: 0, $duration: 1s, $easing: ease-in-out) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-fill-mode: both;
+  animation-timing-function: $easing;
+  animation-delay: $delay;
+}
+
+@keyframes highlight-in {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.fade-in-1 {
+  animation: fade-in 1s, slide-up 0.75s;
+  animation-fill-mode: both;
+}
+
+.fade-in-2 {
+  animation: fade-in 1s, slide-up 0.75s;
+  animation-delay: 0.25s;
+  animation-fill-mode: both;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100px);
+  }
+}
+
+// Navbar
 
 .navbar {
   &.is-transparent {
@@ -72,6 +121,8 @@ body {
   font-size: 19px;
   color: $text-primary-80;
 }
+
+// Landing Page
 
 .main-title {
   font-size: 145px;
@@ -91,7 +142,7 @@ body {
 }
 
 .highlight {
-  width: inherit;
+  width: 100%;
   height: 38px;
   position: relative;
   left: 14px;
@@ -100,10 +151,12 @@ body {
 
   &-primary {
     background: $primary-highlight;
+    @include animate(highlight-in, $delay: 0.75s);
   }
 
   &-secondary {
     background: $secondary-highlight;
+    @include animate(highlight-in, $delay: 1s);
   }
 }
 
@@ -127,6 +180,8 @@ body {
   text-align: center;
   margin-top: 7px;
 }
+
+// Experience Section
 
 .section-title {
   color: $text-primary-90;
