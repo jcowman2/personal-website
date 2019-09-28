@@ -193,6 +193,46 @@ body {
   padding-bottom: 30px;
 }
 
+// About Section
+
+.about-me {
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  p {
+    margin-bottom: 30px;
+  }
+  .bigger {
+    font-size: 18px;
+  }
+}
+
+.skills-body {
+  margin-top: 20px;
+  ul {
+    li {
+      display: inline-block;
+      font-family: $page-mono;
+      margin-right: 20px;
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+  }
+  margin-bottom: 50px;
+}
+
+.contact-body {
+  margin-top: 20px;
+  ul {
+    li {
+      font-family: $page-mono;
+      margin-right: 20px;
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+  }
+}
+
 // Experience Section
 
 .section-title {
@@ -205,11 +245,11 @@ body {
 
 .section-title-container {
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 
 .experience {
-  // margin-bottom: 100px;
+  margin-bottom: 100px;
   margin-left: 2px;
 }
 
@@ -231,4 +271,10 @@ body {
   li {
     margin-bottom: 16px;
   }
+}
+
+// Design Portfolio
+
+.design-item {
+  margin-bottom: 100px;
 }

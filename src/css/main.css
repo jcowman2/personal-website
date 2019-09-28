@@ -7079,6 +7079,32 @@ body {
 .landing-footer {
   padding-bottom: 30px; }
 
+.about-me {
+  margin-top: 60px;
+  margin-bottom: 30px; }
+  .about-me p {
+    margin-bottom: 30px; }
+  .about-me .bigger {
+    font-size: 18px; }
+
+.skills-body {
+  margin-top: 20px;
+  margin-bottom: 50px; }
+  .skills-body ul li {
+    display: inline-block;
+    font-family: "Roboto Mono", monospace;
+    margin-right: 20px;
+    margin-bottom: 14px;
+    font-weight: 700; }
+
+.contact-body {
+  margin-top: 20px; }
+  .contact-body ul li {
+    font-family: "Roboto Mono", monospace;
+    margin-right: 20px;
+    margin-bottom: 14px;
+    font-weight: 700; }
+
 .section-title {
   color: rgba(31, 32, 36, 0.9);
   font-size: 60px;
@@ -7087,9 +7113,10 @@ body {
 
 .section-title-container {
   display: inline-block;
-  margin-bottom: 30px; }
+  margin-bottom: 80px; }
 
 .experience {
+  margin-bottom: 100px;
   margin-left: 2px; }
 
 .experience-title {
@@ -7106,3 +7133,6 @@ body {
 
 .experience-bullets li {
   margin-bottom: 16px; }
+
+.design-item {
+  margin-bottom: 100px; }
