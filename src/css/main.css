@@ -7086,10 +7086,10 @@ body {
   display: inline; }
 
 .section-title-container {
-  display: inline-block; }
+  display: inline-block;
+  margin-bottom: 30px; }
 
 .experience {
-  margin-bottom: 100px;
   margin-left: 2px; }
 
 .experience-title {
