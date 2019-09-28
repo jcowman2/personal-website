@@ -127,6 +127,7 @@ body {
 .main-title {
   font-size: 145px;
   margin-bottom: -10px;
+  @extend .is-size-1-mobile;
 }
 
 .subtitle-highlight-container {
@@ -139,6 +140,7 @@ body {
   letter-spacing: -0.75px;
   color: $text-primary-80;
   display: inline;
+  @extend .is-size-4-mobile;
 }
 
 .highlight {
@@ -167,6 +169,12 @@ body {
 .enter-site {
   height: 100px;
   font-size: 25px;
+  text-align: center;
+  float: right;
+
+  p {
+    margin-bottom: -20px;
+  }
   a {
     color: $text-primary-50;
   }
@@ -181,6 +189,10 @@ body {
   margin-top: 7px;
 }
 
+.landing-footer {
+  padding-bottom: 30px;
+}
+
 // Experience Section
 
 .section-title {
@@ -188,6 +200,7 @@ body {
   font-size: 60px;
   margin-bottom: 80px;
   margin-left: -4px;
+  @extend .is-size-2-mobile;
 }
 
 .experience {
