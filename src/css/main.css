@@ -6995,15 +6995,34 @@ body {
   font-size: 19px;
   color: rgba(31, 32, 36, 0.8); }
 
-#main-title {
+.main-title {
   font-size: 145px;
   margin-bottom: -10px; }
+
+.subtitle-highlight-container {
+  display: inline-block; }
 
 .main-subtitle {
   font-size: 45px;
   font-family: "Roboto Mono", monospace;
   letter-spacing: -0.75px;
-  color: rgba(31, 32, 36, 0.8); }
+  color: rgba(31, 32, 36, 0.8);
+  display: inline; }
+
+.highlight {
+  width: inherit;
+  height: 38px;
+  position: relative;
+  left: 14px;
+  top: -34px;
+  z-index: -1; }
+  .highlight-primary {
+    background: rgba(0, 145, 255, 0.1); }
+  .highlight-secondary {
+    background: rgba(247, 181, 0, 0.1); }
+
+.subtitle-container {
+  margin-bottom: -20px; }
 
 .enter-site {
   height: 100px;
