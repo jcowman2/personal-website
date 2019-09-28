@@ -196,11 +196,15 @@ body {
 // Experience Section
 
 .section-title {
+  @extend .is-size-2-mobile;
   color: $text-primary-90;
   font-size: 60px;
-  margin-bottom: 80px;
   margin-left: -4px;
-  @extend .is-size-2-mobile;
+  display: inline;
+}
+
+.section-title-container {
+  display: inline-block;
 }
 
 .experience {

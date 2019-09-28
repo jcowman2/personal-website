@@ -7082,8 +7082,11 @@ body {
 .section-title {
   color: rgba(31, 32, 36, 0.9);
   font-size: 60px;
-  margin-bottom: 80px;
-  margin-left: -4px; }
+  margin-left: -4px;
+  display: inline; }
+
+.section-title-container {
+  display: inline-block; }
 
 .experience {
   margin-bottom: 100px;
