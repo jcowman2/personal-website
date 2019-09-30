@@ -1,7 +1,4 @@
 /*
-// 1. Import the initial variables
-@import "../node_modules/bulma/sass/utilities/initial-variables";
-
 // 2. Set your own initial variables
 // Update the blue shade, used for links
 $blue: #06bcef;
@@ -6980,7 +6977,8 @@ label.panel-block {
 
 /* Start joecowman.com styles */
 html {
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  scroll-behavior: smooth; }
 
 body {
   font-family: "Faustina", serif;
@@ -7021,11 +7019,14 @@ body {
   color: rgba(31, 32, 36, 0.8); }
 
 .main-title {
-  font-size: 145px;
-  margin-bottom: -10px; }
+  font-size: 145px; }
 
 .subtitle-highlight-container {
   display: inline-block; }
+
+.main-title-pad {
+  width: 100%;
+  min-height: 10px; }
 
 .main-subtitle {
   font-size: 45px;
@@ -7113,7 +7114,7 @@ body {
 
 .section-title-container {
   display: inline-block;
-  margin-bottom: 80px; }
+  margin-bottom: 40px; }
 
 .experience {
   margin-bottom: 100px;

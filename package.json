@@ -4,7 +4,8 @@
   "version": "3.0.0",
   "description": "",
   "dependencies": {
-    "bulma-start": "^0.0.3"
+    "bulma-start": "^0.0.3",
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {},
   "scripts": {}

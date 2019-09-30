@@ -5,10 +5,12 @@
 // You can easily customize Bulma with your own variables.
 // Just uncomment the following block to see the result.
 
-/*
 // 1. Import the initial variables
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 
+$size-1: 3rem;
+
+/*
 // 2. Set your own initial variables
 // Update the blue shade, used for links
 $blue: #06bcef;
@@ -55,6 +57,7 @@ $page-mono: "Roboto Mono", monospace;
 
 html {
   background-color: $page-bg;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -126,12 +129,16 @@ body {
 
 .main-title {
   font-size: 145px;
-  margin-bottom: -10px;
   @extend .is-size-1-mobile;
 }
 
 .subtitle-highlight-container {
   display: inline-block;
+}
+
+.main-title-pad {
+  width: 100%;
+  min-height: 10px;
 }
 
 .main-subtitle {
@@ -245,7 +252,7 @@ body {
 
 .section-title-container {
   display: inline-block;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .experience {
