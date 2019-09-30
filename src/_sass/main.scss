@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+$size-1: 3rem;
+
+/*
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+$blue: #06bcef;
+// Add pink and its invert
+$pink: #ff8080;
+$pink-invert: #fff;
+// Update the sans-serif font family
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $pink;
+$primary-invert: $pink-invert;
+
+// 4. Import the rest of Bulma
+*/
+
+@import "../node_modules/bulma/bulma";
+@import url("https://fonts.googleapis.com/css?family=Faustina&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap");
+
+/* Start joecowman.com styles */
+
+// Colors
+$off-white: #fafafa;
+$dark-slate: #1f2024;
+$bright-blue: #0091ff;
+$bright-yellow: #f7b500;
+
+$page-bg: $off-white;
+$primary-highlight: adjust-color($bright-blue, $alpha: -0.9);
+$secondary-highlight: adjust-color($bright-yellow, $alpha: -0.9);
+
+$text-primary: $dark-slate;
+$text-primary-90: adjust-color($text-primary, $alpha: -0.1);
+$text-primary-80: adjust-color($text-primary, $alpha: -0.2);
+$text-primary-50: adjust-color($text-primary, $alpha: -0.5);
+
+// Fonts
+$page-serif: "Faustina", serif;
+$page-mono: "Roboto Mono", monospace;
+
+// General Styles
+
+html {
+  background-color: $page-bg;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $page-serif;
+  color: $text-primary;
+  font-size: 16px;
+}
+
+// Animations
+
+@mixin animate($name, $delay: 0, $duration: 1s, $easing: ease-in-out) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-fill-mode: both;
+  animation-timing-function: $easing;
+  animation-delay: $delay;
+}
+
+@keyframes highlight-in {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.fade-in-1 {
+  animation: fade-in 1s, slide-up 0.75s;
+  animation-fill-mode: both;
+}
+
+.fade-in-2 {
+  animation: fade-in 1s, slide-up 0.75s;
+  animation-delay: 0.25s;
+  animation-fill-mode: both;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100px);
+  }
+}
+
+// Navbar
+
+.navbar {
+  &.is-transparent {
+    background-color: transparent;
+    background-image: none;
+  }
+}
+
+.navbar-item {
+  font-size: 19px;
+  color: $text-primary-80;
+}
+
+// Landing Page
+
+.main-title {
+  font-size: 145px;
+  @extend .is-size-1-mobile;
+}
+
+.subtitle-highlight-container {
+  display: inline-block;
+}
+
+.main-title-pad {
+  width: 100%;
+  min-height: 10px;
+}
+
+.main-subtitle {
+  font-size: 45px;
+  font-family: $page-mono;
+  letter-spacing: -0.75px;
+  color: $text-primary-80;
+  display: inline;
+  @extend .is-size-4-mobile;
+}
+
+.highlight {
+  width: 100%;
+  height: 38px;
+  position: relative;
+  left: 14px;
+  top: -34px;
+  z-index: -1;
+
+  &-primary {
+    background: $primary-highlight;
+    @include animate(highlight-in, $delay: 0.75s);
+  }
+
+  &-secondary {
+    background: $secondary-highlight;
+    @include animate(highlight-in, $delay: 1s);
+  }
+}
+
+.subtitle-container {
+  margin-bottom: -20px;
+}
+
+.enter-site {
+  height: 100px;
+  font-size: 25px;
+  text-align: center;
+  float: right;
+
+  p {
+    margin-bottom: -20px;
+  }
+  a {
+    color: $text-primary-50;
+  }
+  a:hover {
+    color: $text-primary-80;
+  }
+}
+
+.enter-site-arrow-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 7px;
+}
+
+.landing-footer {
+  padding-bottom: 30px;
+}
+
+// About Section
+
+.about-me {
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  p {
+    margin-bottom: 30px;
+  }
+  .bigger {
+    font-size: 18px;
+  }
+}
+
+.skills-body {
+  margin-top: 20px;
+  ul {
+    li {
+      display: inline-block;
+      font-family: $page-mono;
+      margin-right: 20px;
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+  }
+  margin-bottom: 50px;
+}
+
+.contact-body {
+  margin-top: 20px;
+  ul {
+    li {
+      font-family: $page-mono;
+      margin-right: 20px;
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+  }
+}
+
+// Experience Section
+
+.section-title {
+  @extend .is-size-2-mobile;
+  color: $text-primary-90;
+  font-size: 60px;
+  margin-left: -4px;
+  display: inline;
+}
+
+.section-title-container {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.experience {
+  margin-bottom: 100px;
+  margin-left: 2px;
+}
+
+.experience-title {
+  font-family: $page-mono;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.experience-subtitle {
+  font-family: $page-mono;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.experience-bullets {
+  li {
+    margin-bottom: 16px;
+  }
+}
+
+// Design Portfolio
+
+.design-item {
+  margin-bottom: 100px;
+}

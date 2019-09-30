@@ -1,0 +1,12 @@
+{
+  "name": "personal-website",
+  "private": true,
+  "version": "3.0.0",
+  "description": "",
+  "dependencies": {
+    "bulma-start": "^0.0.3",
+    "smoothscroll-polyfill": "^0.4.4"
+  },
+  "devDependencies": {},
+  "scripts": {}
+}
